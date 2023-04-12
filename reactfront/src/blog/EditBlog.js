@@ -31,10 +31,10 @@ const CompEditBlog = () => {
 
     return (
         <div>
-        <h3>Edit POST</h3>
+        <h3 style={{color:"blue"}}>Editar Blog</h3>
         <form onSubmit={update}>
             <div className="mb-3">
-                <label className="form-label">Titulo</label>
+                <label className="form-label" style={{color:"blue"}}>Titulo</label>
                 <input
                     value={title}
                     onChange={ (e)=> setTitle(e.target.value)}
@@ -43,7 +43,7 @@ const CompEditBlog = () => {
                 />
             </div>
             <div className="mb-3">
-                <label  className="form-label">Contenido</label>
+                <label  className="form-label" style={{color:"blue"}}>Contenido</label>
                 <textarea
                     value={content}
                     onChange={ (e)=> setContent(e.target.value)}
@@ -52,7 +52,7 @@ const CompEditBlog = () => {
                 />
             </div>     
             <div className="mb-3">
-                <label  className="form-label">Categoria</label>
+                <label  className="form-label" style={{color:"blue"}}>Categoria</label>
                 <textarea
                     value={categoria}
                     onChange={ (e)=> setCategoria(e.target.value)}

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './Img.jpg';
 import './App.css';
 
 //importamos los componentes
@@ -12,9 +12,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />        
+        <img src={logo} className="App-logo" alt="" />        
       </header>
       <BrowserRouter>
         <Routes>
@@ -23,7 +23,6 @@ function App() {
             <Route path='/edit/:id' element={ <CompEditBlog />} />
         </Routes>
       </BrowserRouter>
-      
     </div>
   );
 }

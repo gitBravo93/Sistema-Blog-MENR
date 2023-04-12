@@ -29,7 +29,9 @@ const CompShowBlogs = () => {
 		<div className='container'>
 			<div className='row'>
 				<div className='col'>
-					<Link to="/create" className='btn btn-primary mt-2 mb-2'><i className="fas fa-plus"></i></Link>
+					<Link to="/create" className='btn btn-success mt-2 mb-2'>Nuevo Blog</Link>
+				</div>
+				<div>
 					<table className='table'>
 						<thead className='table-primary'>
 							<tr>
@@ -60,7 +62,7 @@ const CompShowBlogs = () => {
 													<td> {blog.content} </td>
 													<td> {blog.categoria} </td>
 													<td>
-														<Link to={`/edit/${blog.id}`} className='btn btn-info'><i className="fas fa-edit"></i></Link>
+														<Link to={`/edit/${blog.id}`} className='btn btn-secondary'><i className="fas fa-edit"></i></Link>
 														<button onClick={() => deleteBlog(blog.id)} className='btn btn-danger'><i className="fas fa-trash-alt"></i></button>
 													</td>
 												</tr>
