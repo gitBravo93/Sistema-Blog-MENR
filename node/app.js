@@ -14,4 +14,11 @@ app.use(express.json())
 // Routes
 app.use('/', blogRoutes)
 
+// Routes que no existen
+app.use((req, res, next) => {
+  res.status(404).json({
+    message: 'endPoind not found'
+  })
+})
+
 export default app;
